@@ -1,0 +1,52 @@
+:root {
+  color-scheme: dark;
+  font-family: "Atkinson Hyperlegible Next", "Segoe UI", sans-serif;
+  background: #131613;
+  color: #f1f5ee;
+  line-height: 1.6;
+  --verde: #c7ff37;
+  --suave: #c6d0c2;
+  --borde: #4a5647;
+}
+
+* { box-sizing: border-box; }
+html { scroll-padding-top: 1rem; }
+body { margin: 0; }
+a { color: var(--verde); text-underline-offset: .22em; }
+a:hover { text-decoration-thickness: .15em; }
+a:focus-visible, summary:focus-visible { outline: .15rem solid var(--verde); outline-offset: .3rem; }
+.marco { width: min(70rem, 100% - 2rem); margin-inline: auto; }
+.cabecera { border-bottom: 1px solid var(--borde); background: #191e18; }
+.cabecera-interior, .pie { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .7rem 2rem; padding-block: 1rem; }
+.marca { font-size: 1.35rem; font-weight: 800; color: inherit; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; }
+nav a { color: var(--suave); }
+nav a[aria-current] { color: var(--verde); }
+.inicio { padding-block: clamp(2.6rem, 8vw, 6rem) 3rem; }
+.inicio h1 { max-width: 19ch; }
+.inicio p { max-width: 62ch; font-size: 1.12rem; color: var(--suave); }
+h1, h2, h3 { line-height: 1.14; }
+h1 { font-size: clamp(2.25rem, 6vw, 4.5rem); letter-spacing: -.045em; margin: 0 0 1.2rem; }
+h2 { font-size: clamp(1.45rem, 3vw, 2.1rem); margin-top: 0; }
+h3 { font-size: 1.15rem; margin-top: 0; }
+.boton { display: inline-block; padding: .55rem .95rem; border-radius: .35rem; background: var(--verde); color: #182006; text-decoration: none; font-weight: 700; }
+.pasos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.pasos article { border: 1px solid var(--borde); background: #1b221a; border-radius: .6rem; padding: 1.25rem; }
+.pasos p { margin-bottom: 0; }
+#soporte { margin-block: 3rem; overflow-wrap: anywhere; }
+details { padding-block: .75rem; border-top: 1px solid var(--borde); }
+summary { cursor: pointer; font-weight: 650; }
+.documento { max-width: 47rem; padding-block: 3rem; overflow-wrap: anywhere; }
+.documento h1 { font-size: clamp(2.1rem, 5vw, 3.35rem); }
+.documento section { margin-top: 2rem; }
+.documento h2 { font-size: 1.4rem; }
+.documento li { margin-bottom: .6rem; }
+dt { font-weight: 700; }
+dd { margin: 0 0 .65rem; }
+.fecha, .pie { color: var(--suave); }
+.pie { border-top: 1px solid var(--borde); padding-block: 1.25rem 1.75rem; }
+
+@media (max-width: 40rem) {
+  .pasos { grid-template-columns: 1fr; }
+  .documento { padding-top: 2rem; }
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Guía de Clipador, la herramienta de escritorio para recortar, subtitular y revisar clips de directos.">
+  <title>Clipador | Guía de la aplicación</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="marco cabecera-interior">
+      <a class="marca" href="index.html" aria-current="page">Clipador</a>
+      <nav aria-label="Navegación principal">
+        <a href="#guia">Guía de uso</a>
+        <a href="#soporte">Soporte</a>
+        <a href="terminos.html">Términos</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+    </div>
+  </header>
+  <main class="marco">
+    <section class="inicio">
+      <h1>Recorta, subtitula y revisa clips de directos</h1>
+      <p>Clipador es una aplicación de escritorio para Windows. Detecta momentos de actividad en los chats de Twitch y Kick, te ayuda a elegir el corte y exporta el video editado. También puedes trabajar con videos guardados en tu PC.</p>
+      <p><a class="boton" href="#guia">Ver guía de uso</a></p>
+    </section>
+    <section id="guia" aria-labelledby="guia-titulo">
+      <h2 id="guia-titulo">Guía de uso</h2>
+      <div class="pasos">
+        <article>
+          <h3>Instala las herramientas</h3>
+          <p>Usa Windows con Node.js y FFmpeg. Para capturar video directo, instala Streamlink o configura OBS. Para generar subtítulos o sugerencias a partir de la voz, configura un modelo local en Clipador.</p>
+        </article>
+        <article>
+          <h3>Elige el momento</h3>
+          <p>Abre Clipador Twitch o Clipador Kick, selecciona el canal e inicia el monitoreo. Puedes revisar los picos del chat o extraer el momento que estás viendo con <strong>Extraer ahora…</strong>.</p>
+        </article>
+        <article>
+          <h3>Edita el clip</h3>
+          <p>Prepara un MP4 vertical en 9:16, ajusta el encuadre y selecciona la zona de la cámara si quieres incluirla. Puedes corregir los subtítulos y guardar tu versión en la carpeta de clips.</p>
+        </article>
+        <article>
+          <h3>Revisa y comparte</h3>
+          <p>En <strong>TikTok…</strong>, revisa el MP4 y edita el título y los hashtags. Puedes abrir TikTok Studio y cargar el video desde el navegador. Si tu integración tiene habilitado <code>video.upload</code>, puedes enviar el MP4 a la bandeja de TikTok para revisarlo en la aplicación móvil.</p>
+        </article>
+      </div>
+    </section>
+    <section id="soporte" aria-labelledby="soporte-titulo">
+      <h2 id="soporte-titulo">Soporte</h2>
+      <p><strong>Distribución y versiones</strong> [[URL_REAL_DE_DESCARGA_O_DOCUMENTACION]]</p>
+      <p><strong>Contacto</strong> [[CORREO_PUBLICO_DE_SOPORTE]]</p>
+      <details>
+        <summary>¿Dónde quedan mis clips?</summary>
+        <p>Clipador exporta el video, los subtítulos y el texto de publicación a la carpeta configurada en tu equipo. En la ventana principal puedes abrirla con <strong>Abrir carpeta de clips</strong>.</p>
+      </details>
+      <details>
+        <summary>¿Dónde reviso un video enviado por la integración de TikTok?</summary>
+        <p>Abre la notificación en la bandeja del móvil con la cuenta que autorizaste. Ahí puedes revisar el video y añadir el título y los hashtags en el editor.</p>
+      </details>
+      <details>
+        <summary>¿Cómo paro los envíos automáticos?</summary>
+        <p>Abre <strong>TikTok…</strong> y desmarca <strong>Enviar los nuevos MP4 a mi bandeja durante esta sesión</strong>. Puedes revisar el progreso del envío actual con <strong>Consultar estado</strong> cuando esté disponible.</p>
+      </details>
+    </section>
+  </main>
+  <footer class="marco pie">
+    <span>Clipador · [[NOMBRE_LEGAL_DEL_RESPONSABLE]]</span>
+    <nav aria-label="Información legal">
+      <a href="terminos.html">Términos de servicio</a>
+      <a href="privacidad.html">Política de privacidad</a>
+    </nav>
+  </footer>
+</body>
+</html>
